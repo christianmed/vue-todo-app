@@ -1,0 +1,33 @@
+@import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
+
+// Color Palette and Font
+$vars: (
+  primary: #292D3E,
+  secondary: #FF5252,
+  accent: #7AC7C4,
+  white: #F9F9F9,
+  font: 'Ubuntu'
+);
+
+// Font Weight
+$fontWeights: (
+  light: 300,
+  normal: 400,
+  bold: 500
+);
+
+// Responsive Sizes
+$breakpoints: (
+  s: 0,
+  m: 640px,
+  l: 1024px,
+  xl: 1440px
+);
+
+:root {
+  @each $key, $value in $vars {
+    --#{$key}: $value;
+  }
+}

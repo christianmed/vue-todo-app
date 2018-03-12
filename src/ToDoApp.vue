@@ -1,5 +1,5 @@
 <template>
-  <div id="ToDoApp">
+  <div class="ToDoApp">
     <AppHeader />
     <ToDo />
     <AppFooter />
@@ -22,5 +22,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./scss/styles.scss";
 
+.ToDoApp {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 40px;
+}
 </style>

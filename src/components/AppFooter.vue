@@ -1,11 +1,11 @@
-<template lang="pug">
-  footer.Footer
-    .Footer__copyright(v-text="copyright")
+<template>
+  <footer class="Footer">
+    <p class="Footer__copyright" v-text="copyright"></p>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: "AppFooter",
   data() {
     return {
       copyright: "Christian Medina | Copyright 2018"
@@ -15,5 +15,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../scss/styles.scss";
 
+.Footer {
+  @include var(background-color, accent);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include var(background-color, primary);
+  @include var(color, accent);
+}
 </style>

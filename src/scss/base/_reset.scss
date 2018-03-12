@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  @include font(font);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.15;
+  @include var(color, primary);
+  @include var(background-color, white);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include fontWeight(normal);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
